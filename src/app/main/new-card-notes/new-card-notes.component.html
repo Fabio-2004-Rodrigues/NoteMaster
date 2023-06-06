@@ -1,3 +1,22 @@
-<app-nav-bar></app-nav-bar>
-bkdkdfbkdjfdkjfnkjn
-<app-footer></app-footer>
+<div class="mt-5 bg-light-subtle px-5 py-4 rounded-4 font-roboto">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Título da anotação</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="anotacaoUsuario.titulo"
+            placeholder="Digite seu título">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Qual a sua anotação?</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite a anotação"
+            [(ngModel)]="anotacaoUsuario.anotacao"></textarea>
+    </div>
+    <div class="d-flex flex-row-reverse">
+        <button class="btn btn-success mx-3" (click)="salvarAnotacao()">Salvar</button>
+        <button class="btn btn-danger mx-3" (click)="cancelarAnotacao()">Cancelar</button>
+    </div>
+
+    <div class="container row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>

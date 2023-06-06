@@ -6,6 +6,7 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { CardNotesComponent } from './main/card-notes/card-notes.component';
 import { NewCardNotesComponent } from './main/new-card-notes/new-card-notes.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NewCardNotesComponent } from './main/new-card-notes/new-card-notes.comp
     NewCardNotesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

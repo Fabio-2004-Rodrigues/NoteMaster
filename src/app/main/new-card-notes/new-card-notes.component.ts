@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class NewCardNotesComponent {
 
+  anotacaoUsuario = {
+    id: "1",
+    titulo: "",
+    anotacao: "",
+  }
+
+  salvarAnotacao() {
+    alert("Anotação salva!!!")
+  }
+
+  cancelarAnotacao(){
+    alert("Sua anotação foi cancelada")
+  }
+
 }
